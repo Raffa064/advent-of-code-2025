@@ -1,4 +1,4 @@
-with open("input.txt", "r") as file:
+with open("example.txt", "r") as file:
     output_joltage = 0
     for bank in file.readlines():
         bank = bank.strip()
@@ -12,4 +12,4 @@ with open("input.txt", "r") as file:
         print("%s J: %d" % (bank, max_joltage))
         output_joltage += max_joltage
 
-    print(output_joltage)
+    print("Output joltage: ", output_joltage)
